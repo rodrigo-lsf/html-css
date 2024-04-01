@@ -12,6 +12,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,10 +20,38 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background: lightgray;
+        }
+
+        /* ALTERNATIVA
+        
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+
+        } */
 
         .numero {
             text-align: right;
@@ -33,6 +62,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
+        CAPTION
         TABLE
             THEAD
                 TR, TD, TH
@@ -42,10 +72,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -72,10 +103,30 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>106.590.486</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laboriosam facere? Odio pariatur iste ut quibusdam consectetur minus laudantium, ab quae harum eos. Molestiae veritatis, beatae eaque exercitationem accusamus ad?
+    Numquam, nemo voluptates, recusandae maxime similique quos iure quia nulla explicabo hic itaque, odio deleniti harum! Magnam, aut. Velit, pariatur inventore? Optio perspiciatis unde eius maiores minus doloremque dolores officia?
+    Provident, magni! Ad beatae cum voluptates sed iste qui rerum aliquam veritatis esse quibusdam ducimus saepe laboriosam inventore nobis repellat nisi nihil debitis ea dignissimos omnis quae, animi perferendis earum.
+    Eaque facilis assumenda iusto ullam totam vitae, neque, nobis quas cum, natus officiis quo quasi provident ducimus. Maxime iste, quia impedit incidunt, ea quos dolorum odio reiciendis, aliquid totam fuga?
+    Necessitatibus vel debitis, eos tenetur, veritatis obcaecati sed minus sunt sint culpa aliquid quae eum ab! Quidem, quo aspernatur totam culpa consequatur accusamus dignissimos, velit veritatis atque fuga delectus voluptatibus!
+    Vitae quaerat possimus facilis? Harum nihil facilis reiciendis ex, ratione placeat sunt saepe asperiores provident voluptatum vero ea iure repellat perferendis quis expedita aspernatur. Nostrum minima fuga aperiam atque quis?
+    Sed cum consectetur repudiandae molestias in impedit expedita aliquam labore ipsam sequi corporis, consequuntur minima voluptas dolores ea sunt necessitatibus delectus error, quasi nihil consequatur aliquid natus, distinctio optio. Perferendis!
+    Cum suscipit voluptate harum sit! Laudantium officia eum neque, qui quia hic quidem assumenda minus ipsa. Nisi, culpa debitis temporibus in cupiditate nobis quas, consequuntur doloremque itaque voluptatibus et qui!
+    Eius deserunt et quidem tempore, impedit voluptatibus laboriosam corporis non? Voluptates et sequi excepturi aliquam quisquam vero tenetur perferendis, consequuntur harum, dignissimos neque commodi voluptas dolorem, corporis saepe dolore. Odit.
+    Reiciendis tempora dicta fugit rerum cupiditate neque corrupti velit tempore laudantium non esse quas magni, quasi iste cumque perspiciatis id et necessitatibus nisi quaerat laboriosam dolor voluptatum sapiente expedita? Blanditiis!
+    Nam neque quia, sapiente labore blanditiis ipsa eos sint quos quasi ducimus! Quis iusto sunt odit corporis voluptatum libero, nihil et iste nulla, obcaecati sit illum voluptatem omnis facere eligendi.
+    Aut voluptatum nemo error ipsam deleniti expedita iste placeat rerum iusto quisquam. Sit placeat saepe, alias ut repellat libero fugit officia nam pariatur facere quo! Molestiae reiciendis esse porro aut.
+    Sint, hic? Voluptas modi in non eius est, odio libero maxime vel voluptatum vero molestias doloremque quidem quos ullam sapiente ad alias obcaecati, beatae assumenda deserunt. Corporis non rem temporibus!
+    Commodi sint dicta sapiente obcaecati temporibus tempora, quae saepe aut ex, exercitationem dolores assumenda cumque quasi suscipit! Ea, natus cupiditate voluptatem unde consectetur iste sint ullam ipsa voluptas, nisi doloremque!
+    Recusandae cupiditate eum laborum, praesentium ut blanditiis ipsam voluptatem debitis sit labore rerum, nemo corporis placeat, nam veritatis provident quidem dignissimos iusto. Facilis hic, ipsa iusto quas accusantium dolor. Quae.
+    Dolore similique ex mollitia dolor quidem ea quis. Veritatis magnam quae mollitia sint voluptatum! Quo quam totam porro ullam aliquam tempore. Quae architecto voluptas laudantium itaque cumque minus ipsam nam?
+    Ex et molestias voluptatibus quidem quisquam accusamus distinctio asperiores recusandae consequuntur harum libero nostrum nemo dolor, saepe provident necessitatibus totam tempore animi ducimus quibusdam doloribus minima? Eveniet animi enim deleniti!
+    Laudantium aperiam doloremque dolorem et reiciendis qui perferendis eligendi esse repellat, cumque fugit! Consequuntur fugiat expedita vero odit quaerat delectus dolorum. Hic dignissimos optio saepe, a suscipit atque inventore voluptas.
+    Porro eveniet ipsa quasi, ipsum ex odio fugiat aspernatur, doloribus aperiam officiis quos, impedit maxime amet accusantium reprehenderit eaque expedita! Voluptate atque aut cumque! Fugiat obcaecati maiores optio maxime dolore.
+    Repellendus officia facilis dicta commodi modi, ducimus ea dolorem voluptatum illo animi exercitationem repudiandae dolore ratione laborum! Quidem quae in numquam nihil repudiandae mollitia perspiciatis? Totam aliquid nisi minus cumque.</p>
 </body>
 </html>
